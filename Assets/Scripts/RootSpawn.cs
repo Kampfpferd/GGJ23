@@ -37,4 +37,13 @@ public class RootSpawn : MonoBehaviour
        // }
         
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag=="Finish")
+        {
+            Destroy(this);
+            Debug.Log("Finish");
+        }
+    }
+
 }

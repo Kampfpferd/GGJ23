@@ -20,6 +20,6 @@ public class Grow : MonoBehaviour
        // test.transform.position = transform.position;
         //GrowDirection = Vector3.down;
         //transform.position = transform.position + GrowDirection * growSpeed * Time.deltaTime;
-        Debug.Log(test.transform.position);
+        //Debug.Log(test.transform.position);
     }
 }
