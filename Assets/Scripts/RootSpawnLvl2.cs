@@ -74,6 +74,7 @@ public class RootSpawnLvl2 : MonoBehaviour
 
         if (playerscript.LVL2)
         {
+            playerscript.wurzelnschlagen = true;
             Roots2.enabled = true;
             Debug.Log(transform.position.x);
             Debug.Log(transform.position.y);
@@ -95,6 +96,7 @@ public class RootSpawnLvl2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Finish")
         {
+            playerscript.wurzelnschlagen = false;
             Roots2.enabled = false;
             playerscript.Score += 1;
             Destroy(this);

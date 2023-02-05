@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public AudioSource Run;
     public AudioSource earthleft;
     public AudioSource earthright;
+    public bool wurzelnschlagen=false;
    
     // Start is called before the first frame update
     void Start()
@@ -88,24 +89,27 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag=="Tree1")
+        if (collision.gameObject.tag=="Tree1" && wurzelnschlagen == false)
         {
+            wurzelnschlagen = true;
             CameraSwitcher.SwitchCamera(Tree1);
             Debug.Log("Tree1");
             LVL1 = true;
             start = true;
             
         }
-        if (collision.gameObject.tag == "Tree2")
+        if (collision.gameObject.tag == "Tree2" && wurzelnschlagen == false)
         {
+            wurzelnschlagen = true;
             CameraSwitcher.SwitchCamera(Tree2);
             Debug.Log("Tree1");
             LVL2 = true;
             start = true;
            
         }
-        if (collision.gameObject.tag == "Tree3")
+        if (collision.gameObject.tag == "Tree3" && wurzelnschlagen == false)
         {
+            wurzelnschlagen = true;
             CameraSwitcher.SwitchCamera(Tree3);
             Debug.Log("Tree1");
             LVL3 = true;
