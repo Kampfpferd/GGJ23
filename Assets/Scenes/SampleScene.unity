@@ -223,7 +223,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 6eef584678ef38943b4fd7e50cf183cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -982,48 +982,56 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: 2.5864823, y: 5.4240627}
-  - {x: 2.1116734, y: 5.63766}
-  - {x: 1.0782213, y: 5.8650928}
-  - {x: -0.7464049, y: 5.883425}
-  - {x: -1.6288424, y: 5.7113094}
-  - {x: -2.6694045, y: 5.254977}
-  - {x: -4.174887, y: 4.1924343}
-  - {x: -5.0705805, y: 3.1251767}
-  - {x: -5.42352, y: 2.4075465}
-  - {x: -5.778822, y: 1.3140378}
-  - {x: -5.9828196, y: 0.10883474}
-  - {x: -5.9511757, y: -0.7560514}
-  - {x: -5.754551, y: -1.8829854}
-  - {x: -5.523549, y: -2.583364}
-  - {x: -5.0144415, y: -3.5825448}
-  - {x: -4.6481915, y: -3.93083}
-  - {x: -4.3941145, y: -4.367733}
-  - {x: -3.560748, y: -5.138767}
-  - {x: -2.7542653, y: -5.6717815}
-  - {x: -2.036877, y: -6.029939}
-  - {x: -1.4590167, y: -6.1760097}
-  - {x: -0.14633796, y: -6.4244113}
-  - {x: 0.50365067, y: -6.412644}
-  - {x: 1.3515389, y: -6.3028736}
-  - {x: 2.2726207, y: -6.1119695}
+  - {x: 2.0930452, y: 5.5803294}
+  - {x: 1.0158005, y: 5.8069954}
+  - {x: -0.7662007, y: 5.8733387}
+  - {x: -1.6490153, y: 5.750901}
+  - {x: -2.0584965, y: 5.6450562}
+  - {x: -2.7547624, y: 5.373564}
+  - {x: -3.2434676, y: 5.041529}
+  - {x: -4.045686, y: 4.5399575}
+  - {x: -4.5852547, y: 4.0313835}
+  - {x: -5.181101, y: 3.2521532}
+  - {x: -5.6101413, y: 2.6192672}
+  - {x: -5.9079103, y: 1.8743477}
+  - {x: -5.994015, y: 1.3991358}
+  - {x: -6.1105237, y: 0.92208636}
+  - {x: -6.2404113, y: 0.12349047}
+  - {x: -6.224484, y: -0.80047894}
+  - {x: -6.1871333, y: -1.1818345}
+  - {x: -6.097864, y: -1.47152}
+  - {x: -5.9450054, y: -1.9591832}
+  - {x: -5.6890254, y: -2.667678}
+  - {x: -5.5968823, y: -2.908754}
+  - {x: -5.2626557, y: -3.7090163}
+  - {x: -5.053766, y: -4.1166368}
+  - {x: -4.5480094, y: -4.7021737}
+  - {x: -3.7762656, y: -5.4192634}
+  - {x: -2.9217112, y: -6.013127}
+  - {x: -2.1774795, y: -6.32347}
+  - {x: -1.2388523, y: -6.507611}
+  - {x: -0.07677801, y: -6.627928}
+  - {x: 0.94611275, y: -6.545118}
+  - {x: 1.6512815, y: -6.4228473}
+  - {x: 2.3338964, y: -6.131879}
   - {x: 3.2148182, y: -5.6967635}
   - {x: 3.9907393, y: -5.2098503}
   - {x: 4.7295914, y: -4.4892173}
-  - {x: 5.432623, y: -3.7076478}
-  - {x: 5.885789, y: -2.9255912}
-  - {x: 6.1095676, y: -2.3386066}
-  - {x: 6.3710375, y: -1.2377266}
-  - {x: 6.459201, y: -0.56652975}
-  - {x: 6.469047, y: 0.21948296}
-  - {x: 6.077416, y: 1.9431833}
-  - {x: 5.7592516, y: 2.653857}
-  - {x: 5.2724977, y: 3.446779}
-  - {x: 4.6523724, y: 4.1993127}
-  - {x: 4.1075554, y: 4.6256285}
-  - {x: 3.685901, y: 4.9507775}
-  - {x: 3.2944705, y: 5.170527}
-  - {x: 3.059946, y: 5.203743}
-  - {x: 2.8909492, y: 5.3766866}
+  - {x: 5.283209, y: -3.7190924}
+  - {x: 5.7010255, y: -2.7436118}
+  - {x: 5.985248, y: -1.8365601}
+  - {x: 6.12066, y: -0.6947216}
+  - {x: 6.1042976, y: 0.25267392}
+  - {x: 5.9512243, y: 1.1744324}
+  - {x: 5.6348276, y: 2.0053225}
+  - {x: 5.333907, y: 2.6015036}
+  - {x: 5.0121336, y: 3.2319314}
+  - {x: 4.3551245, y: 3.985355}
+  - {x: 3.84705, y: 4.4928946}
+  - {x: 3.45629, y: 4.8494105}
+  - {x: 3.195703, y: 5.0576997}
+  - {x: 3.0603437, y: 5.1513615}
+  - {x: 2.7729838, y: 5.332206}
   - {x: 2.5881999, y: 5.4096146}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
@@ -1256,7 +1264,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 6eef584678ef38943b4fd7e50cf183cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1619,7 +1627,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173172817}
-  m_LocalRotation: {x: -0.13500129, y: 0.0016767912, z: 0.00022846072, w: 0.990844}
+  m_LocalRotation: {x: -0.13500129, y: 0.0016768252, z: 0.00022846539, w: 0.990844}
   m_LocalPosition: {x: 0, y: 0, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1858,7 +1866,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: -1962979943, guid: 3dd4735838265c34fae7a2090983615f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2297,8 +2305,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850747964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 5.02, z: 0}
-  m_LocalScale: {x: 2.8434362, y: 3.4683967, z: 1}
+  m_LocalPosition: {x: 0.2459, y: 5.652, z: 0}
+  m_LocalScale: {x: 3.0886602, y: 3.612171, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2614,6 +2622,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1618922573, guid: e289639fc316ca940b431722b9e57d37, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 1041727780303668027, guid: e289639fc316ca940b431722b9e57d37, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -2665,6 +2677,14 @@ PrefabInstance:
     - target: {fileID: 1041727780351472872, guid: e289639fc316ca940b431722b9e57d37, type: 3}
       propertyPath: m_Name
       value: World
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041727780351472886, guid: e289639fc316ca940b431722b9e57d37, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b16c9b1b064be564fa98de295e4c2002, type: 3}
+    - target: {fileID: 1041727780351472886, guid: e289639fc316ca940b431722b9e57d37, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1041727780351472887, guid: e289639fc316ca940b431722b9e57d37, type: 3}
       propertyPath: m_RootOrder
