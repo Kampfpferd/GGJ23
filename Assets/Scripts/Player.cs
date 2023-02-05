@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     public bool LVL3;
     public bool start;
     public int Score = 0;
+    public Animator Anim;
+    public SpriteRenderer Render;
    
     // Start is called before the first frame update
     void Start()
@@ -41,7 +43,22 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D))
+        {
+            Anim.SetBool("Running",true);
+        }
+        else
+        {
+            Anim.SetBool("Running", false);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            Render.flipX = true;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            Render.flipX = false;
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
