@@ -21,6 +21,7 @@ public class RootSpawn : MonoBehaviour
     public CinemachineVirtualCamera Far;
     public CinemachineVirtualCamera Bunny;
     public Player playerscript;
+    public AudioSource Roots1;
 
     // Start is called before the first frame update
     private void OnEnable()
@@ -64,6 +65,7 @@ public class RootSpawn : MonoBehaviour
         
        if (playerscript.LVL1)
         {
+            Roots1.enabled = true;
             Debug.Log(transform.position.x);
             Debug.Log(transform.position.y);
 
@@ -71,6 +73,10 @@ public class RootSpawn : MonoBehaviour
             Root1 = Instantiate(Root, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation) as GameObject;
             Root1.transform.parent = GameObject.Find("World").transform;
             lastSpawnY = transform.position.y;
+        }
+        else
+        {
+            Roots1.enabled = false;
         }
        
         
@@ -84,6 +90,7 @@ public class RootSpawn : MonoBehaviour
     {
         if (collision.gameObject.tag=="Finish")
         {
+            Roots1.enabled = false;
             playerscript.Score += 1;
             Destroy(this);
             if (playerscript.Score == 3)

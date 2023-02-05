@@ -15,6 +15,7 @@ public class RootSpawnLvl2 : MonoBehaviour
     float lastSpawnY;
     int einmal = 1;
     public Transform parent;
+    public AudioSource Roots2;
 
     public CinemachineVirtualCamera Tree1;
     public CinemachineVirtualCamera Tree2;
@@ -73,6 +74,7 @@ public class RootSpawnLvl2 : MonoBehaviour
 
         if (playerscript.LVL2)
         {
+            Roots2.enabled = true;
             Debug.Log(transform.position.x);
             Debug.Log(transform.position.y);
 
@@ -93,6 +95,7 @@ public class RootSpawnLvl2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Finish")
         {
+            Roots2.enabled = false;
             playerscript.Score += 1;
             Destroy(this);
             if (playerscript.Score == 3)

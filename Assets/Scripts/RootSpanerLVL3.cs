@@ -15,6 +15,7 @@ public class RootSpanerLVL3 : MonoBehaviour
     float lastSpawnY;
     int einmal = 1;
     public Transform parent;
+    public AudioSource Roots3;
 
     public CinemachineVirtualCamera Tree1;
     public CinemachineVirtualCamera Tree2;
@@ -73,6 +74,7 @@ public class RootSpanerLVL3 : MonoBehaviour
 
         if (playerscript.LVL3)
         {
+            Roots3.enabled = true;
             Debug.Log(transform.position.x);
             Debug.Log(transform.position.y);
 
@@ -93,6 +95,7 @@ public class RootSpanerLVL3 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Finish")
         {
+            Roots3.enabled = false;
             playerscript.Score += 1;
             Destroy(this);
             if (playerscript.Score==3)
