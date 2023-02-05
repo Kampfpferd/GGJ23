@@ -28,13 +28,13 @@ public class Buttons : MonoBehaviour
 
     //Delay für Gameplay to Credits
 
-    void Winner()
+    public void Winner()
     {
         Invoke("LoadCredits", 3f);
     }
 
-    void LoadCredits()
+    public void LoadCredits()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 }
