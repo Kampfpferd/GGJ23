@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2814700538276840191}
   - component: {fileID: 6928684799341972227}
   - component: {fileID: 6350865026510471062}
+  - component: {fileID: 3007192806033481749}
   m_Layer: 0
   m_Name: Steinchen
   m_TagString: Untagged
@@ -92,7 +93,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269333298224426580}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -111,3 +112,56 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.5213394, y: 2.7889888}
   m_EdgeRadius: 0
+--- !u!68 &3007192806033481749
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269333298224426580}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.2866745, y: 0.43226057}
+  - {x: -2.0330372, y: 0.6787771}
+  - {x: -1.6995474, y: 1.1643777}
+  - {x: -0.5927011, y: 1.3862151}
+  - {x: -0.20723186, y: 1.5201031}
+  - {x: 0.3417493, y: 1.6127403}
+  - {x: 0.7316143, y: 1.7205611}
+  - {x: 1.3180829, y: 1.8013891}
+  - {x: 1.9212182, y: 1.666872}
+  - {x: 2.5426137, y: 1.4356065}
+  - {x: 2.8413389, y: 1.1504958}
+  - {x: 2.9445329, y: 0.65353024}
+  - {x: 2.8389633, y: 0.25345314}
+  - {x: 2.436443, y: 0.038036957}
+  - {x: 2.2344472, y: -0.34384948}
+  - {x: 2.167087, y: -0.79642403}
+  - {x: 2.0779397, y: -1.0692129}
+  - {x: 1.8403352, y: -1.3547089}
+  - {x: 1.089615, y: -1.4546508}
+  - {x: 0.32325298, y: -1.4180789}
+  - {x: -0.28209782, y: -1.3798994}
+  - {x: -0.713423, y: -1.4284258}
+  - {x: -0.9321018, y: -1.4896783}
+  - {x: -1.419483, y: -1.5329775}
+  - {x: -2.0640337, y: -1.4575197}
+  - {x: -2.371608, y: -1.2105439}
+  - {x: -2.6045947, y: -0.88609344}
+  - {x: -2.8234391, y: -0.61354154}
+  - {x: -3.006737, y: -0.25097513}
+  - {x: -2.8721216, y: 0.037468478}
+  - {x: -2.5487316, y: 0.19730715}
+  - {x: -2.373602, y: 0.43811208}
+  - {x: -2.188408, y: 0.49188274}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
