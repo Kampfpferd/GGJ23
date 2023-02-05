@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class RootSpawn : MonoBehaviour
+public class RootSpanerLVL3 : MonoBehaviour
 {
     public GameObject Root;
     public GameObject NewObject;
     public GameObject Root1;
-    public GameObject Root2;
+    public GameObject Tree33;
     public GameObject Root3;
     float timepassed;
     float lastY;
     float lastSpawnY;
+    int einmal = 1;
     public Transform parent;
 
     public CinemachineVirtualCamera Tree1;
@@ -47,46 +48,54 @@ public class RootSpawn : MonoBehaviour
     {
         GameObject player = GameObject.Find("Player");
         playerscript = player.GetComponent<Player>();
-        
-       // NewObject=Instantiate(Root, new Vector3(transform.position.x, transform.position.y,0), transform.rotation)as GameObject;
+
+        // NewObject=Instantiate(Root, new Vector3(transform.position.x, transform.position.y,0), transform.rotation)as GameObject;
         //NewObject.transform.parent = GameObject.Find("World").transform;
         //lastSpawnY = transform.position.y;
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (playerscript.LVL3 && playerscript.start)
+        {
+            float Drehung;
+            Drehung = transform.position.y;
+            transform.position = Tree33.transform.position;
+            playerscript.start = false;
+        }
+
 
         // timepassed += Time.deltaTime;
         //if (timepassed >=2)
         //{
-        
-       if (playerscript.LVL1)
+
+        if (playerscript.LVL3)
         {
             Debug.Log(transform.position.x);
             Debug.Log(transform.position.y);
 
-            CameraSwitcher.SwitchCamera(Tree1);
-            Root1 = Instantiate(Root, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation) as GameObject;
-            Root1.transform.parent = GameObject.Find("World").transform;
+            CameraSwitcher.SwitchCamera(Tree3);
+            Root3 = Instantiate(Root, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation) as GameObject;
+            Root3.transform.parent = GameObject.Find("World").transform;
             lastSpawnY = transform.position.y;
         }
-       
-        
-       
-           //NewObject = Instantiate(Root, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation);
-         //   timepassed = 0;
-       // }
-        
+
+
+
+        //NewObject = Instantiate(Root, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation);
+        //   timepassed = 0;
+        // }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag=="Finish")
+        if (collision.gameObject.tag == "Finish")
         {
             playerscript.Score += 1;
             Destroy(this);
-            if (playerscript.Score == 3)
+            if (playerscript.Score==3)
             {
                 CameraSwitcher.SwitchCamera(Far);
             }
@@ -94,8 +103,8 @@ public class RootSpawn : MonoBehaviour
             {
                 CameraSwitcher.SwitchCamera(Bunny);
             }
+
             Debug.Log("Finish");
         }
     }
-
 }
