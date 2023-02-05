@@ -8,11 +8,13 @@ public class Tree_3_Disable1 : MonoBehaviour
 
 
     public BoxCollider2D BoxTree3;
+    public Player playerscript;
     // public BoxCollider2D BoxTree3;
     // Start is called before the first frame update
     void Start()
     {
-
+        GameObject player = GameObject.Find("Player");
+        playerscript = player.GetComponent<Player>();
         BoxTree3 = GetComponent<BoxCollider2D>();
         // BoxTree3 = GetComponent<BoxCollider2D>();
     }
@@ -26,7 +28,7 @@ public class Tree_3_Disable1 : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         // this.GetComponent<BoxCollider2D>().enabled = false;
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && playerscript.wurzelnschlagen == false)
         {
             Debug.Log("BoxCol");
             BoxTree3.enabled = false;

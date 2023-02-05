@@ -14,6 +14,12 @@ public class Player : MonoBehaviour
     public bool LVL3;
     public bool start;
     public int Score = 0;
+    public Animator Anim;
+    public SpriteRenderer Render;
+    public AudioSource Run;
+    public AudioSource earthleft;
+    public AudioSource earthright;
+    public bool wurzelnschlagen=false;
    
     // Start is called before the first frame update
     void Start()
@@ -41,7 +47,28 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D))
+        {
+            Anim.SetBool("Running",true);
+            Run.enabled = true;
+        }
+        else
+        {
+            Anim.SetBool("Running", false);
+            Run.enabled = false;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            Render.flipX = true;
+            earthleft.enabled = false;
+            earthright.enabled = true;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            Render.flipX = false;
+            earthleft.enabled = true;
+            earthright.enabled = false;
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -62,24 +89,27 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag=="Tree1")
+        if (collision.gameObject.tag=="Tree1" && wurzelnschlagen == false)
         {
+            wurzelnschlagen = true;
             CameraSwitcher.SwitchCamera(Tree1);
             Debug.Log("Tree1");
             LVL1 = true;
             start = true;
             
         }
-        if (collision.gameObject.tag == "Tree2")
+        if (collision.gameObject.tag == "Tree2" && wurzelnschlagen == false)
         {
+            wurzelnschlagen = true;
             CameraSwitcher.SwitchCamera(Tree2);
             Debug.Log("Tree1");
             LVL2 = true;
             start = true;
            
         }
-        if (collision.gameObject.tag == "Tree3")
+        if (collision.gameObject.tag == "Tree3" && wurzelnschlagen == false)
         {
+            wurzelnschlagen = true;
             CameraSwitcher.SwitchCamera(Tree3);
             Debug.Log("Tree1");
             LVL3 = true;
