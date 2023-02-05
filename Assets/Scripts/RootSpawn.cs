@@ -22,6 +22,7 @@ public class RootSpawn : MonoBehaviour
     public CinemachineVirtualCamera Bunny;
     public Player playerscript;
     public AudioSource Roots1;
+    public GameObject Tree11;
 
     // Start is called before the first frame update
     private void OnEnable()
@@ -62,8 +63,15 @@ public class RootSpawn : MonoBehaviour
         // timepassed += Time.deltaTime;
         //if (timepassed >=2)
         //{
-        
-       if (playerscript.LVL1)
+        if (playerscript.LVL1 && playerscript.start)
+        {
+            float Drehung;
+            Drehung = transform.position.y;
+            transform.position = Tree11.transform.position;
+            playerscript.start = false;
+        }
+
+        if (playerscript.LVL1)
         {
             playerscript.wurzelnschlagen = true;
             Roots1.enabled = true;
