@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tree1
+  - Tree2
+  - Tree3
   layers:
   - Default
   - TransparentFX
